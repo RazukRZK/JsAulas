@@ -12,7 +12,7 @@ else if(idade >= 30 && idade < 60){
     alert("Adulto")
 }
 
-else if(idade >60){
+else if(idade >= 60){
     alert("Idoso")
 }
 
@@ -21,7 +21,7 @@ else{
     
 }
 
-var novoUsuario = confirm("Deseja infromar a idade de outro usuário")
+var novoUsuario = confirm("Deseja informar a idade de outro usuário")
 
     if (novoUsuario == true){
     location.reload();
