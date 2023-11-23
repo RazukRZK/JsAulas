@@ -6,5 +6,6 @@ while(contadorPrimeiro <= 10){
         console.log(`${contadorPrimeiro} x ${contador} = ${contadorPrimeiro * contador}`);
         contador++  
     } 
+    var contador = 0
     contadorPrimeiro++
 }
