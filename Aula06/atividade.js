@@ -22,7 +22,7 @@ function cadastrarFilme(){
 
     var filme = new Filme(nomeInput, descricaoInput, dataInput, diretorInput, categoriaInput, infoFilmes);
 
-    infoFilme.innerHTML = `<div class="">
+    infoFilme.innerHTML = `<div class="post">
     <h3>${filme.nome}</h3>
     <p>Descrição : ${filme.descricao}</p>
     <p>Data : ${filme.data}</p>
