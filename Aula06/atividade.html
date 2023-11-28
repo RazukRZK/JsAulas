@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade</title>
+</head>
+<style>
+    body{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        gap: 5px;
+    }
+
+    form input{
+        height: 30px;
+        padding: 5px;
+    }
+
+    form button{
+        height: 30px;
+        padding: 5px;
+    }
+
+    
+</style>
+<body>
+    <h1>Cadastre o seu filme</h1>
+    <form>
+        <input type="text" id="nome" placeholder="Nome do filme">
+        <input type="text" id="descricao" placeholder="Descrição do filme">
+        <input type="date" id="data" placeholder="data">
+        <input type="text" id="diretor" placeholder="Diretor do filme">
+        <input type="text" id="categoria" placeholder="Categoria do filme">
+        <button type="button" id="btnFilme">Cadastrar filme</button>
+    </form>
+
+    <div id="infoFilme"></div>
+    
+    <script src="atividade.js"></script>
+</body>
+</html>
