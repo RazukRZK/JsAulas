@@ -50,4 +50,27 @@ class Carro {
     }
 }
 
-var uno = new Carro ("Fiat", "Uno mile", 1998, "vermelho", 190);
+var btnCarro = document.querySelector("#btnCarro")
+
+btnCarro.addEventListener("click", criarCarro);
+
+function criarCarro(){
+    let marcaInput = document.querySelector("#marca").value;
+    let modeloInput = document.querySelector("#modelo").value;
+    let dataInput = document.querySelector("#data").value;
+    let corInput = document.querySelector("#cor").value;
+    let velocidadeMaxInput = document.querySelector("#velocidadeMax").value;
+    let resposta = document.querySelector("#resposta")
+
+    var carro = new Carro (marcaInput, modeloInput, dataInput, corInput, velocidadeMaxInput);
+
+    resposta.innerHTML = `<div class="post">
+    <h3>${carro.modelo}</h3>
+    <p>Marca : ${carro.marca}</p>
+    <p>Data : ${carro.ano}</p>
+    <p>Cor do carro : <span style= "color:${carro.cor}">Cor</span></p>
+    <p>Velocidade máxima : ${carro.velocidadeMax}</p>
+    </div>`
+    
+}
+
