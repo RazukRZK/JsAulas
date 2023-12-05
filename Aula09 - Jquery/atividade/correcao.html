@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .temaClaro{
+            background-color: rgb(228, 228, 228);
+            color: black;
+            transition: 0.5s;
+        }
+
+        .temaEscuro{
+            background-color: black;
+            color: rgb(228, 228, 228);
+            transition: 0.5s;
+        }
+    </style>
+</head>
+<body class="temaClaro">
+    <h1>Atividade 1 - tabuada</h1>
+    <input type="number" id="numeroEscolhido" max="10">
+    <button type="button" id="btnCalcular">Calcular</button>
+    <div id="resultadoCalculo"></div>
+    <HR></HR>
+    <h1>Atividade 2 - tema</h1>
+    <button type="button" id="trocaTema" class="temaClaro">TEMA ESCURO</button>
+
+    <script src="../materialDeAula/js/jquery-3.7.1.js"></script>
+    <script src="correcao.js"></script>
+    <script src="correcao02.js"></script>
+</body>
+</html>
